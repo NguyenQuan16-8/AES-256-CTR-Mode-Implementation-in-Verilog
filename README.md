@@ -1,22 +1,24 @@
 # AES-256-CTR-Mode-Implementation-in-Verilog
-Dự án thiết kế bộ mã hóa/giải mã AES-256 hoạt động ở chế độ Counter (CTR) bằng ngôn ngữ Verilog. Thiết kế được tối ưu hóa cho phần cứng (FPGA/ASIC) với khả năng xử lý song song và độ trễ thấp.
+This project involves designing an **AES-256** encoder/decoder operating in Counter (CTR) mode using the Verilog hardware description language.
+
+The design is optimized for hardware such as FPGAs, focusing on parallel processing capabilities and low latency.
 
 
-##  Tính năng chính (Key Features)
+##  Key Features
 * **Algorithm:** AES-256 (Key 256-bit, 14 rounds).
 * **Mode:** CTR (Counter Mode).
-* **Architecture:** Tối ưu hóa cho hiệu suất
+* **Architecture:** Area-optimized design.
 * **Language:** Verilog HDL.
 
-##  Cấu trúc thư mục (Project Structure)
-* `src/`: Chứa mã nguồn thiết kế (.v).
-* `tb/`: Chứa Testbench và các vector thử nghiệm.
-* `docs/`: Tài liệu thiết kế và sơ đồ khối.
+##  Project Structure
+* `src/`: Contains the design source code files (.v).
+* `tb/`: Includes the Testbench and various test vectors.
+* `docs/`: Holds the design documentation and block diagrams.
 
-##  Hướng dẫn chạy mô phỏng
-Sử dụng ModelSim/QuestaSim:
-1. Mở terminal tại thư mục dự án.
-2. Chạy lệnh:
+##  Simulation Guide
+To run the simulation using ModelSim or QuestaSim, follow these steps:
+1. Open your terminal at the project's root directory.
+2. Execute the following commands:
    ```bash
    vlib work
    vlog src/*.v tb/*.v
